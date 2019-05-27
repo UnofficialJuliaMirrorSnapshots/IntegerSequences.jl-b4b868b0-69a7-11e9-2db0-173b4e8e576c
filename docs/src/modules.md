@@ -25,7 +25,7 @@ Generalized André numbers count the ``m``-alternating permutations of length ``
 
 The Bell transform transforms an integer sequence into an integer triangle; also known as incomplete Bell polynomials.
 
-Let ``X`` be an integer sequence, then ``B_{n, k}(X) = \\sum_{m=1}^{n-k+1} \\binom{n-1}{m-1} X[m] B_{n-m,k-1}(X)`` where ``B_{0,0} = 1, B_{n,0} = 0`` for ``n≥1, B_{0,k} = 0`` for ``k≥1``.
+Let ``X`` be an integer sequence, then ``B_{n, k}(X) = \sum_{m=1}^{n-k+1} \binom{n-1}{m-1} X[m] B_{n-m,k-1}(X)`` where ``B_{0,0} = 1, B_{n,0} = 0`` for ``n≥1, B_{0,k} = 0`` for ``k≥1``.
 
 The Bell transform is (0,0)-based and the associated triangle always has as first column 1,0,0,0,... This column is often missing in the OEIS. Other Stirling number related sequences are implemented in the module StirlingLahNumbers.
 
@@ -54,7 +54,7 @@ The rational Bernoulli numbers are defined here with ``B(1) = 1/2``. Why this is
 
    🔶  [BinaryInteger](https://github.com/OpenLibMathSeq/IntegerSequences.jl/blob/master/src/BinaryInteger.jl)
 
-For positive n, BinaryIntegerLength is ``\\lfloor(\\operatorname{log}(2, n)\\rfloor) + 1``, BinaryIntegerLength(0) = 0.
+For positive n, BinaryIntegerLength is ``⌊ log[2](n) ⌋ + 1``, BinaryIntegerLength(0) = 0.
 
 * BinaryIntegerLength, Bil, V001855, V003314, V033156, V054248, V061168, V083652, V097383, V123753, V295513
 
@@ -70,9 +70,9 @@ Ported from [BinaryQuadraticForms](http://oeis.org/wiki/User:Peter_Luschny/Binar
 
    🔶  [CantorMachines](https://github.com/OpenLibMathSeq/IntegerSequences.jl/blob/master/src/CantorMachines.jl)
 
-* Cantor-Machine, Cantor-Enumeration, Cantor-Pairing, Cantor-BoustrophedonicMachine, Cantor-BoustrophedonicEnumeration, Cantor-BoustrophedonicPairing, RosenbergStrong-BoustrophedonicMachine, RosenbergStrong-BoustrophedonicEnumeration, RosenbergStrong-BoustrophedonicPairing
-
 [Cantor's enumeration of N X N revisited](https://luschny.wordpress.com/2018/09/24/cantors-enumeration-of-n2-revisited/).
+
+* Cantor-Machine, Cantor-Enumeration, Cantor-Pairing, Cantor-BoustrophedonicMachine, Cantor-BoustrophedonicEnumeration, Cantor-BoustrophedonicPairing, RosenbergStrong-BoustrophedonicMachine, RosenbergStrong-BoustrophedonicEnumeration, RosenbergStrong-BoustrophedonicPairing
 
    🔶  [CarmichaelNumbers](https://github.com/OpenLibMathSeq/IntegerSequences.jl/blob/master/src/CarmichaelNumbers.jl)
 
@@ -130,11 +130,11 @@ Applying Deléham's Δ-operation often gives an additional first column or an ad
 
 * PolygonalNumber, PyramidalNumber, V014107, V095794, V067998, V080956, V001477, V000217, V000290, V000326, V000384, V000566, V000567, V001106, V001107, V005564, V058373, V254749, V000292, V000330, V002411, V002412, V002413, V002414, V007584, V007585
 
-   🔶  [GaussFactorial](https://github.com/OpenLibMathSeq/IntegerSequences.jl/blob/master/src/GaussFactorial.jl)
+   🔶  [GaussFactorials](https://github.com/OpenLibMathSeq/IntegerSequences.jl/blob/master/src/GaussFactorials.jl)
 
 The Gauß factorial is ``∏_{1 ≤ j ≤ N, j ⊥ n} j``, the product of the positive integers which are ``≤ N`` and are prime to ``n``.
 
-* GaußFactorial, I193338, F193338, L193338, V193338, I193339, F193339, L193339, V193339
+* GaussFactorial, I193338, F193338, L193338, V193338, I193339, F193339, L193339, V193339, V216919, V001783, V055634, V232980, V232981, V232982, V124441, V124442, V066570
 
    🔶  [GeneralizedBinomial](https://github.com/OpenLibMathSeq/IntegerSequences.jl/blob/master/src/GeneralizedBinomial.jl)
 
